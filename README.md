@@ -7,8 +7,8 @@
 **Step 1. Install Git/ Github in your system.** Fork the repository: This step creates a copy of the original repository under your GitHub account.
 
 ```bash
-git clone https://github.com/Hemanth-Asp/Asian_Cuisine.git
-cd Asian_Cuisine
+git clone https://github.com/Hemanth-Asp/Dosa-restro.git
+cd Dosa_Restro
 ```
 
 **Step 2 . Create a new branch:** It's recommended to create a new branch for your contribution. This helps keep your changes separate from the main branch.
@@ -27,7 +27,7 @@ git commit -m "Add my contribution"
 **Step 4. Sync with the original repository:** Keep your forked repository in sync with the original repository to incorporate any recent changes made by other contributors.
 
 ```bash
-git remote add upstream https://github.com/Hemanth-Asp/Asian_Cuisine.git
+git remote add upstream https://github.com/Hemanth-Asp/Dosa-restro.git
 git fetch upstream
 git merge upstream/main
 ```
