@@ -1,3 +1,4 @@
+// constants
 const body = document.querySelector("body"),
     loader = document.querySelector(".loader-wrap"),
     links = document.querySelectorAll('a[href="#"]'),
@@ -29,34 +30,206 @@ const body = document.querySelector("body"),
     boxModelImage = document.querySelector(".menu .box-model img"),
     pageTitle = document.querySelector("title");
 
+// remove loader
+function fadeOutEffect() {
+    const fadeEffect = setInterval(function() {
+        if (!loader.style.opacity) {
+            loader.style.opacity = 1;
+        }
+        if (loader.style.opacity > 0) {
+            loader.style.opacity -= 0.4;
+        } else {
+            body.classList.remove('stop-scroll');
+            loader.classList.add('remove');
+            clearInterval(fadeEffect);
+        }
+    }, 100);
+}
+window.addEventListener("load", fadeOutEffect);
 
-    links.forEach(link =>
-        link.addEventListener("click", function(e) {
-            e.preventDefault();
-        })
-    );
-    
-    // toggle hamburger menu button
-    navToggle.addEventListener("click", () => {
-        navToggle.classList.toggle("active");
-        navSpanMiddle.classList.toggle("hide");
-        navNavigationBar.classList.toggle("show");
+// prevent links click hash
+links.forEach(link =>
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+    })
+);
+
+// toggle hamburger menu button
+navToggle.addEventListener("click", () => {
+    navToggle.classList.toggle("active");
+    navSpanMiddle.classList.toggle("hide");
+    navNavigationBar.classList.toggle("show");
+});
+
+// show active navigationbar li
+navNavigationBarLi.forEach(li =>
+    li.addEventListener("click", () => {
+        const arr = Array.from(li.parentElement.children);
+        arr.forEach(li => li.classList.remove("active"));
+        li.classList.add("active");
+    })
+);
+
+// svg-up smooth scroll
+svgUp.addEventListener("click", () => {
+    window.scroll({
+        top: 0,
+        behavior: "smooth"
     });
-    
-    // show active navigationbar li
-    navNavigationBarLi.forEach(li =>
-        li.addEventListener("click", () => {
-            const arr = Array.from(li.parentElement.children);
-            arr.forEach(li => li.classList.remove("active"));
-            li.classList.add("active");
-        })
-    );
-    
-    // svg-up smooth scroll
-    svgUp.addEventListener("click", () => {
+});
+
+window.onscroll = function() {
+    // make navbar fixed & change logo color
+    if (window.pageYOffset > headerSection.offsetHeight - 75) {
+        nav.classList.add("active");
+        logoImage.src = "https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988525/logo-rosa.png";
+    } else {
+        nav.classList.remove("active");
+        logoImage.src = "https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/logo-rosa-white.png";
+    }
+
+    // header welcome fade out and in
+    if (window.scrollY > 0) {
+        headerText.style.opacity = -window.scrollY / 300 + 1;
+    }
+    // home page JS
+    if (pageTitle.text === "ROSA- Restaurant") {
+        //change dots background color
+        if (window.scrollY < headerSection.offsetHeight * 0.5) {
+            dots.forEach(dot => dot.classList.remove("black"));
+            dotTwo.classList.remove("active");
+            dotOne.classList.add("active");
+        } else if (
+            window.scrollY > headerSection.offsetHeight * 0.5 &&
+            window.scrollY < recipeSection.offsetTop * 0.72
+        ) {
+            dots.forEach(dot => dot.classList.add("black"));
+        } else if (
+            window.scrollY > recipeSection.offsetTop * 0.75 &&
+            window.scrollY < menuSection.offsetTop * 0.81
+        ) {
+            dots.forEach(dot => dot.classList.remove("black"));
+            dotOne.classList.remove("active");
+            dotThree.classList.remove("active");
+            dotTwo.classList.add("active");
+        } else if (
+            window.scrollY > menuSection.offsetTop * 0.81 &&
+            window.scrollY < fixedImageSection.offsetTop * 0.86
+        ) {
+            dots.forEach(dot => dot.classList.add("black"));
+            dotThree.classList.remove("active");
+            dotTwo.classList.add("active");
+        } else if (
+            window.scrollY > fixedImageSection.offsetTop * 0.86 &&
+            window.scrollY < footerSection.offsetTop * 0.72
+        ) {
+            dots.forEach(dot => dot.classList.remove("black"));
+            dotTwo.classList.remove("active");
+            dotThree.classList.add("active");
+        } else if (
+            window.scrollY > footerSection.offsetTop * 0.72 &&
+            window.scrollY < footerSection.offsetTop * 0.901
+        ) {
+            dots.forEach(dot => dot.classList.add("black"));
+        } else if (window.scrollY > footerSection.offsetTop * 0.901) {
+            dots.forEach(dot => dot.classList.remove("black"));
+        }
+    }
+};
+
+// home page JS
+if (pageTitle.text === "ROSA- Restaurant") {
+    // svg-down smooth scroll
+    svgDown.addEventListener("click", () => {
         window.scroll({
-            top: 0,
+            top: aboutSection.offsetTop - 30,
             behavior: "smooth"
         });
     });
-    
+
+    // dots smooth scroll
+    dots.forEach(dot =>
+        dot.addEventListener("click", function() {
+            window.scrollTo({
+                top: document.querySelector(this.dataset.x).offsetTop - 100,
+                behavior: "smooth"
+            });
+        })
+    );
+
+    // show box model
+    menuImgs.forEach(img =>
+        img.addEventListener("click", function() {
+            const arr = Array.from(this.parentElement.parentElement.children);
+
+            arr.forEach(div => div.classList.remove("active"));
+
+            this.parentElement.classList.add("active");
+            boxModel.classList.add("active");
+            boxModelImage.src = this.src;
+            boxModelImage.classList.add("active");
+            body.classList.add("hide-scroll");
+        })
+    );
+
+    // box model functions
+    function boxModelFun(e) {
+        // close box model
+        if (
+            e.code === "Escape" ||
+            (e.target.tagName === "DIV" && !e.target.classList.contains("arrow")) ||
+            e.target.classList.contains("close")
+        ) {
+            boxModel.classList.remove("active");
+            body.classList.remove("hide-scroll");
+        }
+
+        if (boxModel.classList.contains("active")) {
+            if (
+                e.code === "ArrowRight" ||
+                e.code === "ArrowLeft" ||
+                e.target.classList.contains("arrow-right") ||
+                e.target.classList.contains("arrow-left")
+            ) {
+                const arr = Array.from(menuImageContainer.children);
+                const active = arr.find(div => div.classList.contains("active"));
+
+                // change box model image
+                if (
+                    e.target.classList.contains("arrow-right") ||
+                    e.code === "ArrowRight"
+                ) {
+                    if (active.nextElementSibling === null) {
+                        active.parentElement.firstElementChild.classList.add("active");
+                        boxModelImage.src =
+                            active.parentElement.firstElementChild.firstElementChild.src;
+                    } else {
+                        active.nextElementSibling.classList.add("active");
+                        boxModelImage.src = active.nextElementSibling.firstElementChild.src;
+                    }
+                }
+
+                // change box model image
+                else if (
+                    e.target.classList.contains("arrow-left") ||
+                    e.code === "ArrowLeft"
+                ) {
+                    if (active.previousElementSibling === null) {
+                        active.parentElement.lastElementChild.classList.add("active");
+                        boxModelImage.src =
+                            active.parentElement.lastElementChild.lastElementChild.src;
+                    } else {
+                        active.previousElementSibling.classList.add("active");
+                        boxModelImage.src =
+                            active.previousElementSibling.firstElementChild.src;
+                    }
+                }
+                active.classList.remove("active");
+            }
+        }
+    }
+
+    window.addEventListener("keydown", boxModelFun);
+    window.addEventListener("click", boxModelFun);
+    boxModelArrow.addEventListener("click", boxModelFun);
+}
