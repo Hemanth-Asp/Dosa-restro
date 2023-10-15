@@ -271,7 +271,7 @@
   
    /*Start fixed-image*/
   .fixed-image {
-    background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988533/frontpage-menu.jpg") fixed center;
+    background: url("https://i.ytimg.com/vi/SxlJZK26Kmg/maxresdefault.jpg") fixed center;
     background-size: cover;
     height: 400px;
   }
@@ -301,7 +301,7 @@
     /*Start Recipes*/
     .recipes .image {
       height: 350px;
-      background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988529/three-col-1.jpg") fixed center;
+      background: url("https://chennaimemes.in/wp-content/uploads/2023/07/dhosa.jpg") fixed center;
       background-size: cover;
     }
     /*End Recipes*/
