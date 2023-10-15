@@ -1,0 +1,309 @@
+commit 14ee4f2d27f44be63cf5d49303d0e5d2e924538f
+Author: Hemanth-Asp <punetihemanth@iitbhilai.ac.in>
+Date:   Sun Oct 15 21:57:06 2023 +0530
+
+    adding animation type-2
+
+commit 4f17f2ccafb8075921014986a0bcdb3f7dc097bb
+Author: Hemanth-Asp <punetihemanth@iitbhilai.ac.in>
+Date:   Sun Oct 15 21:47:52 2023 +0530
+
+    checking animation type-1
+
+commit da932b606ec618fa88b652b228a8a27dd809be9d
+Author: Hemanth-Asp <punetihemanth@iitbhilai.ac.in>
+Date:   Sun Oct 15 20:53:48 2023 +0530
+
+    updating responsiveness issue
+
+commit bca23bfa8b8008febf150f568cdb3fe78bc26dac
+Author: Hemanth-Asp <punetihemanth@iitbhilai.ac.in>
+Date:   Sun Oct 15 19:43:10 2023 +0530
+
+    adding motions to the website using js
+
+commit 9b084343857a1c3a8da1db8585982e56d4a01b1f
+Merge: dfcbf66 6605edd
+Author: Varshini <119073242+VarshiniGunti@users.noreply.github.com>
+Date:   Sun Oct 15 16:39:13 2023 +0530
+
+    Merge pull request #13 from Hemanth-Asp/varshini
+    
+    CSS added
+
+commit 6605edd1a1b24ac2d40f485a943b1d233928e229
+Merge: 5524036 dfcbf66
+Author: Varshini <119073242+VarshiniGunti@users.noreply.github.com>
+Date:   Sun Oct 15 16:39:05 2023 +0530
+
+    Merge branch 'main' into varshini
+
+commit dfcbf66aac07e5f26c4e05e860d91512a8427cbb
+Merge: 5385880 dfa6df7
+Author: SAISURYAtalla <131685948+SAISURYAtalla@users.noreply.github.com>
+Date:   Sun Oct 15 16:35:01 2023 +0530
+
+    Merge pull request #12 from Hemanth-Asp/surya
+    
+    contact page css and static image css added
+
+commit dfa6df70b11f3a87c78a88e23c0b90856ef0a9aa
+Merge: ff899c9 5385880
+Author: SAISURYAtalla <tallasai@iitbhilai.ac.in>
+Date:   Sun Oct 15 16:29:29 2023 +0530
+
+    Merge remote-tracking branch 'upstream/main' into surya
+
+commit 5385880fff544509fc6c3b3dc0f79a62f522e002
+Author: Varshini <119073242+VarshiniGunti@users.noreply.github.com>
+Date:   Sun Oct 15 16:28:21 2023 +0530
+
+    Recipes and menu CSS added
+
+commit ff899c999008700ccd6c737914ad83082b3f580e
+Merge: 431ab11 e90b6a0
+Author: SAISURYAtalla <tallasai@iitbhilai.ac.in>
+Date:   Sun Oct 15 16:23:23 2023 +0530
+
+    contact page css added
+
+commit 431ab11c311373f0f50d2c2c111649e9c2af3ecd
+Author: SAISURYAtalla <tallasai@iitbhilai.ac.in>
+Date:   Sun Oct 15 16:20:22 2023 +0530
+
+    contact page css and static image css added
+
+commit 5524036c4de450c8cdbb8ed16d6ad59b1baf4ee3
+Author: VarshiniGunti <guntiv@iitbhilai.ac.in>
+Date:   Sun Oct 15 16:17:20 2023 +0530
+
+    Css for menu and recipes added
+
+commit e90b6a002f42cc5e8ae33407f25e1ebca6cfd3f3
+Merge: bd6a351 931ded8
+Author: SAISURYAtalla <131685948+SAISURYAtalla@users.noreply.github.com>
+Date:   Sun Oct 15 16:14:01 2023 +0530
+
+    Merge pull request #11 from Hemanth-Asp/surya
+    
+    reservation section added
+
+commit 931ded8f33960afc6de4ccba7864fc6457ae83e2
+Author: SAISURYAtalla <tallasai@iitbhilai.ac.in>
+Date:   Sun Oct 15 16:12:51 2023 +0530
+
+    reservation section added
+
+commit bd6a3511cc6fe4273ec82770a938b79d48f09b70
+Merge: 899072e e232664
+Author: Varshini <119073242+VarshiniGunti@users.noreply.github.com>
+Date:   Sun Oct 15 16:07:17 2023 +0530
+
+    Merge pull request #10 from Hemanth-Asp/varshini2
+    
+    Menu section added
+
+commit e232664aeaac182ebd9c5d9c2f6ba4f49221a212
+Merge: 8e63875 899072e
+Author: Varshini <119073242+VarshiniGunti@users.noreply.github.com>
+Date:   Sun Oct 15 16:07:05 2023 +0530
+
+    Merge branch 'main' into varshini2
+
+commit 8e638751db7b7c8996795674c39c5cf77c801913
+Author: VarshiniGunti <guntiv@iitbhilai.ac.in>
+Date:   Sun Oct 15 16:01:13 2023 +0530
+
+    Menu section added
+
+commit 899072ed61328ea7089f5974a353fc1bbeb66bad
+Author: Varshini <119073242+VarshiniGunti@users.noreply.github.com>
+Date:   Sun Oct 15 15:58:37 2023 +0530
+
+    Recipes Section added
+
+commit 8c9df3f32036f9f7a987a4c2b067873ccfe3ce26
+Merge: 7f0ffa9 34ec4c9
+Author: VarshiniGunti <guntiv@iitbhilai.ac.in>
+Date:   Sun Oct 15 15:50:07 2023 +0530
+
+    recipes section added
+
+commit 7f0ffa929ab1ca8f863320ec132aa495e59d8253
+Author: VarshiniGunti <guntiv@iitbhilai.ac.in>
+Date:   Sun Oct 15 15:48:25 2023 +0530
+
+    recipes added
+
+commit 34ec4c9392cd7ff3eab54badef42d011e180673c
+Author: VarshiniGunti <guntiv@iitbhilai.ac.in>
+Date:   Sun Oct 15 15:47:13 2023 +0530
+
+    added recipes section
+
+commit 7f9484a406dfbce3874c0f62e297c0d6ad8f0b82
+Merge: 0ea45b6 1a0c9e7
+Author: Varshini <119073242+VarshiniGunti@users.noreply.github.com>
+Date:   Sun Oct 15 15:33:31 2023 +0530
+
+    Merge pull request #9 from Hemanth-Asp/varshini
+    
+    Welcome section added
+
+commit 1a0c9e724ea533fcbb11dd5904eb5bf7aef55018
+Author: VarshiniGunti <guntiv@iitbhilai.ac.in>
+Date:   Sun Oct 15 15:32:34 2023 +0530
+
+    Welcome section added
+
+commit 0ea45b61536028e83ddef77066a663006747f289
+Merge: 7718089 3156a33
+Author: Hemanth-Asp <119241921+Hemanth-Asp@users.noreply.github.com>
+Date:   Sun Oct 15 15:23:11 2023 +0530
+
+    Merge pull request #8 from Hemanth-Asp/hemanth-asp
+    
+    changing the background
+
+commit 013ae68339087ae05fd208f12ff1168ea5d74434
+Author: VarshiniGunti <guntiv@iitbhilai.ac.in>
+Date:   Sun Oct 15 15:21:51 2023 +0530
+
+    Welcome section added
+
+commit 7718089b5de179be928fd36e369517183c6a68b9
+Merge: 2c49732 c4b7360
+Author: SAISURYAtalla <131685948+SAISURYAtalla@users.noreply.github.com>
+Date:   Sat Oct 14 00:32:40 2023 +0530
+
+    Merge pull request #7 from Hemanth-Asp/surya
+    
+    styled and added about-us and footer of the DOSA Restro
+
+commit c4b736006f6b1364aef0895bec884597396ae2e7
+Author: SAISURYAtalla <tallasai@iitbhilai.ac.in>
+Date:   Sat Oct 14 00:29:01 2023 +0530
+
+    about-us styling done
+
+commit 531e0109204ff3687da6f7242ae708980af806ab
+Author: SAISURYAtalla <tallasai@iitbhilai.ac.in>
+Date:   Sat Oct 14 00:28:30 2023 +0530
+
+    about-us strucutre
+
+commit 54d6933c7479a4ae4d48353b639c52c8b8434c57
+Author: SAISURYAtalla <tallasai@iitbhilai.ac.in>
+Date:   Sat Oct 14 00:21:57 2023 +0530
+
+    footer styling done
+
+commit 3156a338ae654a6b7c94dfc2bc247a815a89fc52
+Author: Hemanth-Asp <punetihemanth@iitbhilai.ac.in>
+Date:   Fri Oct 13 23:51:37 2023 +0530
+
+    changing the background
+
+commit 2c497327c0cef15bf0a5cb4f8f0c169262efe59c
+Author: SAISURYAtalla <131685948+SAISURYAtalla@users.noreply.github.com>
+Date:   Fri Oct 13 23:29:52 2023 +0530
+
+    Update README.md
+
+commit 45f26ed7ead49b6ad46d5a456b41d62243945b2c
+Merge: 1030a8d 15b29e2
+Author: Hemanth-Asp <119241921+Hemanth-Asp@users.noreply.github.com>
+Date:   Fri Oct 13 23:23:13 2023 +0530
+
+    Merge pull request #6 from Hemanth-Asp/hemanth-asp
+    
+    adding header and background image
+
+commit 15b29e21273f9fac2b590f3a2d385bdcac5ef780
+Author: Hemanth-Asp <punetihemanth@iitbhilai.ac.in>
+Date:   Fri Oct 13 23:21:52 2023 +0530
+
+    adding header and background image
+
+commit 1030a8dd2df356a54a6b0a9c688ad8002247b893
+Merge: 16234ea 4783e51
+Author: Hemanth-Asp <119241921+Hemanth-Asp@users.noreply.github.com>
+Date:   Fri Oct 13 23:02:42 2023 +0530
+
+    Merge pull request #5 from Hemanth-Asp/hemanth-asp
+    
+    Revert "adding header and bg image"
+
+commit 4783e51a010a1c8b40737692a7ba7e968ad0faf8
+Author: Hemanth-Asp <punetihemanth@iitbhilai.ac.in>
+Date:   Fri Oct 13 23:01:16 2023 +0530
+
+    Revert "adding header and bg image"
+    
+    This reverts commit 05ec9a35505660d41837d11cc842f9b2dd5b6cec.
+
+commit 16234ea7814282cef48eff28eaeef1a0a2fd2c50
+Merge: 974e4b5 05ec9a3
+Author: Hemanth-Asp <119241921+Hemanth-Asp@users.noreply.github.com>
+Date:   Fri Oct 13 22:58:36 2023 +0530
+
+    Merge pull request #4 from Hemanth-Asp/hemanth-asp
+    
+    adding header and bg image
+
+commit 05ec9a35505660d41837d11cc842f9b2dd5b6cec
+Author: Hemanth-Asp <punetihemanth@iitbhilai.ac.in>
+Date:   Fri Oct 13 22:56:44 2023 +0530
+
+    adding header and bg image
+
+commit 974e4b5e430f242bd1ee5a0c89111c4c099ebe9f
+Merge: 7f14768 0091ae7
+Author: SAISURYAtalla <131685948+SAISURYAtalla@users.noreply.github.com>
+Date:   Fri Oct 13 00:27:50 2023 +0530
+
+    Merge pull request #3 from Hemanth-Asp/surya
+    
+    footer_initial
+
+commit 0091ae78bb2d3d86fee458e98541d24d96979ce2
+Author: SAISURYAtalla <tallasai@iitbhilai.ac.in>
+Date:   Fri Oct 13 00:26:18 2023 +0530
+
+    footer_initial
+
+commit 7f1476839acdb319d0d3c9c5c1bbc9f91f96111f
+Merge: f757676 3eb57db
+Author: Hemanth-Asp <119241921+Hemanth-Asp@users.noreply.github.com>
+Date:   Fri Oct 13 00:17:13 2023 +0530
+
+    Merge pull request #2 from Hemanth-Asp/hemanth-asp
+    
+    Adding html css and js files
+
+commit 3eb57db11f79c00cf38c47375e0e619f1e646ccf
+Author: Hemanth-Asp <punetihemanth@iitbhilai.ac.in>
+Date:   Fri Oct 13 00:11:44 2023 +0530
+
+    Adding html css and js files
+
+commit f757676e8d6db52d299e4767750ff905b7fb5746
+Merge: 95e9382 e0b79ca
+Author: Hemanth-Asp <119241921+Hemanth-Asp@users.noreply.github.com>
+Date:   Thu Oct 12 23:39:01 2023 +0530
+
+    Merge pull request #1 from Hemanth-Asp/hemanth-asp
+    
+    Update README.md
+
+commit e0b79cabf5ac04960306a719e1538d7598a1b942
+Author: Hemanth-Asp <119241921+Hemanth-Asp@users.noreply.github.com>
+Date:   Thu Oct 12 23:38:40 2023 +0530
+
+    Update README.md
+
+commit 95e9382f6019adafc0c101dd37bb20905ee9a5ea
+Author: Hemanth-Asp <119241921+Hemanth-Asp@users.noreply.github.com>
+Date:   Thu Oct 12 23:36:33 2023 +0530
+
+    Initial commit
