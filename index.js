@@ -47,6 +47,7 @@ function fadeOutEffect() {
 }
 window.addEventListener("load", fadeOutEffect);
 
+
 // prevent links click hash
 links.forEach(link =>
     link.addEventListener("click", function(e) {
@@ -89,56 +90,58 @@ window.onscroll = function() {
     }
 
     // header welcome fade out and in
-    if (window.scrollY > 0) {
-        headerText.style.opacity = -window.scrollY / 300 + 1;
+    if (window.pageYOffset > 0) {
+        headerText.style.opacity = -window.pageYOffset / 300 + 1;
     }
     // home page JS
-    if (pageTitle.text === "ROSA- Restaurant") {
+    if (pageTitle.text === "DOSA- Restaurant") {
         //change dots background color
-        if (window.scrollY < headerSection.offsetHeight * 0.5) {
+        if (window.pageYOffset < headerSection.offsetHeight * 0.5) {
             dots.forEach(dot => dot.classList.remove("black"));
             dotTwo.classList.remove("active");
             dotOne.classList.add("active");
         } else if (
-            window.scrollY > headerSection.offsetHeight * 0.5 &&
-            window.scrollY < recipeSection.offsetTop * 0.72
+            window.pageYOffset > headerSection.offsetHeight * 0.5 &&
+            window.pageYOffset < recipeSection.offsetTop * 0.72
         ) {
             dots.forEach(dot => dot.classList.add("black"));
         } else if (
-            window.scrollY > recipeSection.offsetTop * 0.75 &&
-            window.scrollY < menuSection.offsetTop * 0.81
+            window.pageYOffset > recipeSection.offsetTop * 0.75 &&
+            window.pageYOffset < menuSection.offsetTop * 0.81
         ) {
             dots.forEach(dot => dot.classList.remove("black"));
             dotOne.classList.remove("active");
             dotThree.classList.remove("active");
             dotTwo.classList.add("active");
         } else if (
-            window.scrollY > menuSection.offsetTop * 0.81 &&
-            window.scrollY < fixedImageSection.offsetTop * 0.86
+            window.pageYOffset > menuSection.offsetTop * 0.81 &&
+            window.pageYOffset < fixedImageSection.offsetTop * 0.86
         ) {
             dots.forEach(dot => dot.classList.add("black"));
             dotThree.classList.remove("active");
             dotTwo.classList.add("active");
         } else if (
-            window.scrollY > fixedImageSection.offsetTop * 0.86 &&
-            window.scrollY < footerSection.offsetTop * 0.72
+            window.pageYOffset > fixedImageSection.offsetTop * 0.86 &&
+            window.pageYOffset < footerSection.offsetTop * 0.72
         ) {
             dots.forEach(dot => dot.classList.remove("black"));
             dotTwo.classList.remove("active");
             dotThree.classList.add("active");
         } else if (
-            window.scrollY > footerSection.offsetTop * 0.72 &&
-            window.scrollY < footerSection.offsetTop * 0.901
+            window.pageYOffset > footerSection.offsetTop * 0.72 &&
+            window.pageYOffset < footerSection.offsetTop * 0.901
         ) {
             dots.forEach(dot => dot.classList.add("black"));
-        } else if (window.scrollY > footerSection.offsetTop * 0.901) {
+        } else if (window.pageYOffset > footerSection.offsetTop * 0.901) {
             dots.forEach(dot => dot.classList.remove("black"));
         }
     }
 };
 
 // home page JS
-if (pageTitle.text === "ROSA- Restaurant") {
+
+if (pageTitle.text === "DOSA- Restaurant") {
+
     // svg-down smooth scroll
     svgDown.addEventListener("click", () => {
         window.scroll({
